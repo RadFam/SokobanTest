@@ -17,7 +17,7 @@ namespace GameControls
 		
 		public FieldManager fieldManager;
 
-		public int walkDistance;
+		public int walkDistance{get; private set;}
 		public float walkSpeed;
 		public int currentScore{get; private set;}
 
@@ -33,6 +33,7 @@ namespace GameControls
             }
 
 			currentScore = 0;
+			walkDistance = 1;
 
 			boxesContainer = new Dictionary<GameObject, BoxController>();
         }
