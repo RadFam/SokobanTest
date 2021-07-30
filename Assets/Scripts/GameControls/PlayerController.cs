@@ -12,7 +12,6 @@ namespace GameControls
 		SpriteRenderer playerSprite;
 		[SerializeField]
 		Animator playerAnim;
-		[SerializeField]
 		Vector2Int moveVector;
 		enum PlayerDirects {Down, Left, Right, Up};
 		[SerializeField]
