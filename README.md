@@ -1,2 +1,5 @@
-# SokobanTest
-Demo version of Sokoban-like game
+### SokobanTest
+
+Демо версия Sokoban-подобной игры
+
+В данной игре предлагается 
