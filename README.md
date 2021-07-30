@@ -5,10 +5,10 @@
 В данной игре предлагается двигать ящики на специально отведенные для них места. Игра заканчивается, когда, все ящики займут специально назначенные позиции.
 
 Ящик:\
-<img src="/_forReadMeFiles/Box.png" width="60" height="60">
+<img src="/_forReadMeFiles/Box.png" width="20" height="20">
 
 Позиция, куда должен быть поставлен ящик:\
-<img src="/_forReadMeFiles/GrassTarget.png" width="60" height="60">
+<img src="/_forReadMeFiles/GrassTarget.png" width="20" height="20">
 
 Движению ящиков мешают
 - стены
@@ -16,9 +16,9 @@
 
 Для того, чтобы было удобно редактировать игровое поле, был использован встроенный Tilemap Editor с квадратной ортогональной сеткой, 
 в котором были введены тайлы
-- травы <img src="/_forReadMeFiles/Grass.png" width="60" height="60">
-- стен <img src="/_forReadMeFiles/Wall.png" width="60" height="60">
-- мест, куда нужно поставить ящики <img src="/_forReadMeFiles/GrassTarget.png" width="60" height="60">
+- травы <img src="/_forReadMeFiles/Grass.png" width="20" height="20">
+- стен <img src="/_forReadMeFiles/Wall.png" width="20" height="20">
+- мест, куда нужно поставить ящики <img src="/_forReadMeFiles/GrassTarget.png" width="20" height="20">
 
 В целом, для рисования игрового поля, необходимо воспользоваться tile palette, как на рисунке ниже
 <img src="/_forReadMeFiles/FieldEditor.png">
@@ -37,9 +37,10 @@
 - WalkSpeed - скоростью перемещения по полю player'а и двигаемых им ящиков
 - MaxScore - максимального необходимого числа очков, которое должен набрать игрок, чтобы уровень считался пройденным (разумеется, оно не должно быть больше числа тайлов <img src="/_forReadMeFiles/GrassTarget.png" width="20" height="20"> для перетаскивания туда ящиков)
 
-В FieldTileManager.cs можно настраивать DeltaXTile и DeltaYTile - ширину и высоту поля в тайлах (имеют смысл, если по границам поля стены не отрисовывать, на за них не должны выпадать player и ящики)\
+В FieldTileManager.cs можно настраивать DeltaXTile и DeltaYTile - ширину и высоту поля в тайлах (имеют смысл, если по границам поля стены не отрисовывать, на за них не должны выпадать player и ящики)
 
 <img src="/_forReadMeFiles/GameControllers.png">
 
-В PlayerController.cs можно настроить спрайты, которые будут отображаться на player'е, когда он смотрит влево/вправо, вниз/вверх\
+В PlayerController.cs можно настроить спрайты, которые будут отображаться на player'е, когда он смотрит влево/вправо, вниз/вверх
+
 <img src="/_forReadMeFiles/PlayerController.png">
